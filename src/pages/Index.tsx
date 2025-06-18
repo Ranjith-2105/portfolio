@@ -23,7 +23,7 @@ const Index = () => {
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="font-inter text-gray-400">
-            © 2024 Your Name. Built with passion and dedication.
+            © 2025 Ranjith MV - All rights reserved. || Allways Ready to learn and grow.
           </p>
         </div>
       </footer>

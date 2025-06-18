@@ -5,36 +5,28 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and real-time inventory management.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      title: "Dyslexia-Prediction Using Machine Learning",
+      description: "A machine learning model that predicts dyslexia in children using various features, enhancing early diagnosis and intervention.",
+      image: "/dyslexia.jpg",
+      technologies: ["Machine Learning"],
       githubUrl: "#",
       liveUrl: "#",
       featured: true
     },
     {
-      title: "Data Visualization Dashboard",
-      description: "Interactive dashboard for analyzing business metrics with real-time data processing and beautiful visualizations using D3.js and React.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      title: "Enhancing Wheat Disease Detection: A Convolutional Neural Network Approach",
+      description: "A deep learning model utilizing convolutional neural networks to accurately detect and classify wheat diseases, improving agricultural productivity.",
+      image: "./crop1.png",
       technologies: ["React", "D3.js", "Python", "Flask"],
       githubUrl: "#",
       liveUrl: "#",
       featured: true
     },
+   
     {
-      title: "AI-Powered Chatbot",
-      description: "Intelligent chatbot using natural language processing to provide customer support with machine learning capabilities for continuous improvement.",
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
-      technologies: ["Python", "TensorFlow", "Flask", "React"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, team collaboration features, and progress tracking.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+      title: "Personal Portfolio Website",
+      description: "A personal portfolio website showcasing my projects, skills, and experience.",
+      image: "./portfolio.png",
       technologies: ["React", "Firebase", "Material-UI", "Socket.io"],
       githubUrl: "#",
       liveUrl: "#",

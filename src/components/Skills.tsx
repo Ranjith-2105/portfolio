@@ -9,21 +9,21 @@ const Skills = () => {
       icon: Code,
       skills: [
         { name: "JavaScript", level: 90 },
-        { name: "Python", level: 85 },
+        { name: "Python", level: 80 },
         { name: "Java", level: 80 },
-        { name: "TypeScript", level: 85 },
-        { name: "C++", level: 75 }
+        { name: "C", level: 90 }
+        
       ]
     },
     {
       title: "Web Development",
       icon: Globe,
       skills: [
-        { name: "React", level: 90 },
-        { name: "Node.js", level: 85 },
-        { name: "HTML/CSS", level: 95 },
-        { name: "Next.js", level: 80 },
-        { name: "Tailwind CSS", level: 90 }
+        { name: "React", level: 75 },
+        { name: "Node.js", level: 70 },
+        { name: "HTML/CSS", level: 95 }
+       
+      
       ]
     },
     {
@@ -31,21 +31,19 @@ const Skills = () => {
       icon: Database,
       skills: [
         { name: "MongoDB", level: 80 },
-        { name: "PostgreSQL", level: 75 },
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 75 }
+        { name: "MySQL", level: 75 },
+        { name: "Git", level: 70 }
       ]
     },
     {
       title: "Design & Analytics",
       icon: Palette,
       skills: [
-        { name: "Figma", level: 85 },
-        { name: "Adobe Creative Suite", level: 80 },
+      
+        { name: "Canva", level: 80 },
         { name: "Data Analysis", level: 85 },
-        { name: "Machine Learning", level: 75 },
-        { name: "Statistics", level: 80 }
+        { name: "Machine Learning", level: 95 },
+        { name: "Deep Learning", level: 80 }
       ]
     }
   ];
@@ -108,7 +106,7 @@ const Skills = () => {
             {[
               "Problem Solving", "Team Leadership", "Project Management", 
               "Research & Analysis", "Technical Writing", "Public Speaking",
-              "Agile Methodology", "Version Control", "Testing & Debugging"
+               "Version Control", "Creative Thinking", "Time Management"
             ].map((skill, index) => (
               <span 
                 key={index}

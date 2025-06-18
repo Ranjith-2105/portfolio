@@ -1,32 +1,35 @@
-
 import React from 'react';
 import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 
 const Academics = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University Name",
-      period: "2021 - 2025",
-      gpa: "3.9/4.0",
-      description: "Specializing in Software Engineering and Data Science with honors",
-      achievements: ["Dean's List", "Programming Competition Winner", "Research Assistant"]
+      degree: "Bachelor of Technology in Artificial Intelligence and Data Science",
+      institution: "Kongu Engineering College",
+      period: "2023 - 2027",
+      gpa: "8.43/10.00 (till 3rd semester)",
+      description: "",
+      achievements: []
     },
     {
-      degree: "High School Diploma",
-      institution: "High School Name",
-      period: "2017 - 2021",
-      gpa: "4.0/4.0",
-      description: "Valedictorian with focus on STEM subjects",
-      achievements: ["Valedictorian", "National Merit Scholar", "Science Olympiad Champion"]
+      degree: "Higher Secondary Certificate (HSC)",
+      institution: "Kongu Matriculation Higher Secondary School",
+      period: "2022 - 2023",
+      gpa: "85.16%",
+      description: "",
+      achievements: []
     }
   ];
 
   const certifications = [
-    "AWS Cloud Practitioner",
-    "Google Analytics Certified",
-    "Microsoft Azure Fundamentals",
-    "Python Programming Certificate"
+    {
+      name: "MongoDB Certified Associate Developer",
+      url: "mongodb.pdf",
+    },
+    {
+      name: "Oracle APEX Cloud Developer Certified Professional",
+      url: "/oracle_certificate.pdf",
+    }
   ];
 
   return (
@@ -42,6 +45,7 @@ const Academics = () => {
           </p>
         </div>
 
+        {/* Education Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {education.map((edu, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8">
@@ -63,29 +67,29 @@ const Academics = () => {
                     </div>
                     <div className="flex items-center space-x-1">
                       <Award size={16} />
-                      <span>GPA: {edu.gpa}</span>
+                      <span>Percentage: {edu.gpa}</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <p className="font-inter text-gray-600 mb-4">
-                {edu.description}
-              </p>
+              <p className="font-inter text-gray-600 mb-4">{edu.description}</p>
 
-              <div className="space-y-2">
-                <h4 className="font-inter font-semibold text-gray-900 text-sm">Key Achievements:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {edu.achievements.map((achievement, achIndex) => (
-                    <span 
-                      key={achIndex}
-                      className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
-                    >
-                      {achievement}
-                    </span>
-                  ))}
+              {edu.achievements.length > 0 && (
+                <div className="space-y-2">
+                  <h4 className="font-inter font-semibold text-gray-900 text-sm">Key Achievements:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {edu.achievements.map((achievement, achIndex) => (
+                      <span
+                        key={achIndex}
+                        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {achievement}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>
@@ -103,14 +107,17 @@ const Academics = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {certifications.map((cert, index) => (
-              <div 
+              <a
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 text-center hover:from-blue-50 hover:to-blue-100 transition-all duration-300"
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 text-center hover:from-blue-50 hover:to-blue-100 transition-all duration-300 hover:scale-105"
               >
-                <p className="font-inter font-medium text-gray-900">
-                  {cert}
+                <p className="font-inter font-medium text-gray-900 hover:text-blue-600">
+                  {cert.name}
                 </p>
-              </div>
+              </a>
             ))}
           </div>
         </div>
