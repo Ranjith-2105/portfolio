@@ -26,7 +26,7 @@ const Projects = () => {
       description: "A personal portfolio website showcasing my projects, skills, and experience.",
       image: "./portfolio.png",
       technologies: ["React", "Firebase", "Material-UI", "Socket.io"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Ranjith-2105/portfolio/tree/main",
       liveUrl: "#",
       featured: false
     }
